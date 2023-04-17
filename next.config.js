@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const { withSentryConfig } = require('@sentry/nextjs');
 const { createSecureHeaders } = require("next-secure-headers");
 const nextConfig = {
   reactStrictMode: true,
@@ -50,11 +49,4 @@ const nextConfig = {
   }
 }
 
-const sentryWebpackPluginOptions = {
-  silent: true,
-};
-
-module.exports = withSentryConfig(
-  nextConfig,
-  sentryWebpackPluginOptions
-)
+module.exports = nextConfig
