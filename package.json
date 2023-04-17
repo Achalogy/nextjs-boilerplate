@@ -4,7 +4,10 @@
   "description": "",
   "main": "next-sitemap.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "gen:sitemap": "next-sitemap",
+    "build": "next build --debug && next-sitemap",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
