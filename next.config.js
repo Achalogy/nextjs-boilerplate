@@ -3,9 +3,6 @@
 const { createSecureHeaders } = require("next-secure-headers");
 const nextConfig = {
   reactStrictMode: true,
-  sentry: {
-    hideSourceMaps: true,
-  },
   images: {
     domains: ["i.imgur.com"]
   },
