@@ -4,7 +4,6 @@ module.exports = {
   generateRobotsTxt: true,
   exclude: [
     '/_next/*',
-    '/decano'
   ],
   robotsTxtOptions: {
     policies: [{
